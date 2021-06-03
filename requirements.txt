@@ -1,5 +1,4 @@
 asgiref==3.2.3
-python
 Django==3.2.3
 djangorestframework==3.12.4
 psycopg2==2.8.6
