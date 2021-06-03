@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'BasicAPI',
+    'BasicAPI.apps.BasicapiConfig',
     'rest_framework',
 
 ]
@@ -78,8 +78,11 @@ WSGI_APPLICATION = 'sampleAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DBforApi',
+        'USER': 'postgres',
+        'PASSWORD': 'psudo$1998',
+        'HOST': 'localhost'
     }
 }
 
