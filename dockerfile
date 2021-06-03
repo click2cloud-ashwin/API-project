@@ -2,7 +2,7 @@ FROM django
 
 ADD . /BasicAPI
 
-WORKDIR /API-Project
+WORKDIR /API-Project/
 
 RUN pip install -r requirements.txt
 
